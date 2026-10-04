@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">BASIC DEMO PROJECT</p>
+    <h1>Expense Tracker</h1>
+    <p class="subtitle">Track income and spending with a clean dashboard.</p>
+
+    <section class="summary">
+      <div><span>Balance</span><strong id="balance">৳0</strong></div>
+      <div><span>Income</span><strong id="income">৳0</strong></div>
+      <div><span>Expenses</span><strong id="expenses">৳0</strong></div>
+    </section>
+
+    <section class="panel">
+      <h2>Add transaction</h2>
+      <form id="form">
+        <input id="title" placeholder="Description" required>
+        <input id="amount" type="number" min="1" placeholder="Amount" required>
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button>Add</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Recent transactions</h2>
+      <div id="list"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
