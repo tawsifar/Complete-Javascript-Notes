@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow Kanban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p class="eyebrow">BASIC DEMO PROJECT</p>
+        <h1>TaskFlow</h1>
+        <p>Simple Kanban board for organizing work.</p>
+      </div>
+      <button id="addTask">+ Add Task</button>
+    </header>
+
+    <section class="board">
+      <div class="column">
+        <h2>To Do <span id="todoCount">0</span></h2>
+        <div id="todo" class="tasks"></div>
+      </div>
+      <div class="column">
+        <h2>In Progress <span id="progressCount">0</span></h2>
+        <div id="progress" class="tasks"></div>
+      </div>
+      <div class="column">
+        <h2>Done <span id="doneCount">0</span></h2>
+        <div id="done" class="tasks"></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
